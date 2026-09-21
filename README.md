@@ -1,67 +1,33 @@
-Лабораторная работа №4 — Вариант 6 (waterbill)
+<div align="center">
 
-Репозиторий содержит выполнение лабораторной работы №4 по дисциплине разработки на Go. Проект представляет собой собственный пакет для расчета расходов на водоснабжение, применения штрафных санкций за просрочку платежа и формирования отчетов.
+# 💧 Лабораторная работа №4 — Вариант 6 (`waterbill`)
 
-📌 Задание (Вариант 6: waterbill)
+![Go Version](https://img.shields.io/badge/Go-1.21+-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![GitHub License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![GitHub Repo](https://img.shields.io/badge/GitHub-lab4--variant06-181717?style=for-the-badge&logo=github)
 
-В пакете waterbill реализованы следующие функции:
+**Модуль на Go для расчета расходов на водоснабжение, применения пени и генерации квитанций.**
 
-WaterUsage(prev, curr float64) (float64, error) — вычисление объема израсходованной воды в м³.
+---
 
-WaterCost(cubic, tariff float64) (float64, error) — вычисление базовой стоимости водоснабжения.
+</div>
 
-ApplyPenalty(cost *float64, penaltyPercent float64) error — изменение стоимости с учетом штрафного процента (работа с указателем).
+## 📌 Описание проекта
 
-FormatWaterReport(owner string, cubic, cost float64) (string, error) — формирование форматированной строки отчета.
+Данный проект разработан в рамках Лабораторной работы №4. Он содержит собственный пакет `waterbill` для расчета коммунальных платежей за воду, обработку возможных ошибок, примеры работы с указателями и интеграцию со сторонними библиотеками GitHub.
 
-📁 Структура проекта
+---
 
+## 📁 Структура проекта
+
+```text
 lab4-variant06/
-├── go.mod
-├── go.sum
-├── README.md
+├── go.mod                  # Файл конфигурации модуля Go
+├── go.sum                  # Контрольные суммы зависимостей
+├── README.md               # Документация проекта
 ├── cmd/
 │   └── app/
 │       └── main.go         # Точка входа в приложение
 └── pkg/
     └── waterbill/
-        └── waterbill.go    # Пакет с логикой и документацией
-
-
-🛠 Зависимости (GitHub)
-
-В проекте используются следующие внешние пакеты:
-
-github.com/fatih/color — для форматированного цветного вывода в консоль.
-
-github.com/google/uuid — для генерации уникального идентификатора квитанции.
-
-Установка зависимостей:
-
-go get github.com/fatih/color
-go get github.com/google/uuid
-
-
-🚀 Запуск приложения
-
-Для запуска программы выполните следующую команду из корневой директории проекта:
-
-go run cmd/app/main.go
-
-
-📖 Проверка документации
-
-Через консоль (go doc):
-
-go doc ./pkg/waterbill
-go doc ./pkg/waterbill.WaterUsage
-
-
-Через веб-интерфейс (godoc):
-
-godoc -http=:6060
-
-
-После запуска откройте браузер и перейдите по адресу:
-
-http://localhost:6060/pkg/
+        └── waterbill.go    # Пакет с бизнес-логикой (Вариант 6)
