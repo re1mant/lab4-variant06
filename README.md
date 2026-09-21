@@ -31,3 +31,5 @@ lab4-variant06/
 └── pkg/
     └── waterbill/
         └── waterbill.go    # Пакет с бизнес-логикой (Вариант 6)
+Запуск:
+go run cmd/app/main.go
