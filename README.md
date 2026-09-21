@@ -1,6 +1,6 @@
 <div align="center">
 
-# 💧 Лабораторная работа №4 — Вариант 6 (`waterbill`)
+#  Лабораторная работа №4 — Вариант 6 (`waterbill`)
 
 ![Go Version](https://img.shields.io/badge/Go-1.21+-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 ![GitHub License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
@@ -12,13 +12,13 @@
 
 </div>
 
-## 📌 Описание проекта
+##  Описание проекта
 
 Данный проект разработан в рамках Лабораторной работы №4. Он содержит собственный пакет `waterbill` для расчета коммунальных платежей за воду, обработку возможных ошибок, примеры работы с указателями и интеграцию со сторонними библиотеками GitHub.
 
 ---
 
-## 📁 Структура проекта
+##  Структура проекта
 
 ```text
 lab4-variant06/
